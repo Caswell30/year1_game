@@ -1,0 +1,24 @@
+{
+    "label": "build",
+    "type": "shell",
+    "command": "g++",
+    "args": [
+        "-g",
+        "${workspaceFolder}/src/main.cpp",
+        "-o",
+        "${workspaceFolder}/bin/game",
+        "-I",
+        "C:/SFML/include",              // Path to SFML headers
+        "-L",
+        "C:user/camer/year1_game/lib/SFML",                  // Path to SFML libraries
+        "-lsfml-graphics",
+        "-lsfml-window",
+        "-lsfml-system"
+    ],
+    "group": {
+        "kind": "build",
+        "isDefault": true
+    },
+    "problemMatcher": ["$gcc"],
+    "detail": "SFML build task."
+}

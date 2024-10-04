@@ -1,0 +1,10 @@
+^C:\USERS\CAMER\YEAR1_GAME\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Camer/year1_game -BC:/Users/Camer/year1_game --check-stamp-file C:/Users/Camer/year1_game/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
